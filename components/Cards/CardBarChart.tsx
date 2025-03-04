@@ -97,8 +97,9 @@ export default function CardBarChart() {
         },
       },
     };
-    let ctx = document.getElementById("bar-chart").getContext("2d");
-    window.myBar = new Chart(ctx, config);
+    let canvas = document.getElementById("bar-chart") as HTMLCanvasElement;
+    let ctx = canvas.getContext("2d");
+    // window.myBar = new Chart(ctx, config);
   }, []);
   return (
     <>

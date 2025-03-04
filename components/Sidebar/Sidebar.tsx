@@ -95,7 +95,7 @@ export default function Sidebar() {
                     href="#pablo"
                     className={
                       "text-xs uppercase py-3 font-bold block " +
-                      (pathname?.includes("/admin/dashboard") !== -1
+                      (pathname?.includes("/admin/dashboard")
                         ? "text-lightBlue-500 hover:text-lightBlue-600"
                         : "text-blueGray-700 hover:text-blueGray-500")
                     }
@@ -103,7 +103,7 @@ export default function Sidebar() {
                     <i
                       className={
                         "fas fa-tv mr-2 text-sm " +
-                        (pathname?.includes("/admin/dashboard") !== -1
+                        (pathname?.includes("/admin/dashboard")
                           ? "opacity-75"
                           : "text-blueGray-300")
                       }
@@ -119,7 +119,7 @@ export default function Sidebar() {
                     href="#pablo"
                     className={
                       "text-xs uppercase py-3 font-bold block " +
-                      (pathname?.includes("/admin/settings") !== -1
+                      (pathname?.includes("/admin/settings")
                         ? "text-lightBlue-500 hover:text-lightBlue-600"
                         : "text-blueGray-700 hover:text-blueGray-500")
                     }
@@ -127,7 +127,7 @@ export default function Sidebar() {
                     <i
                       className={
                         "fas fa-tools mr-2 text-sm " +
-                        (pathname?.includes("/admin/settings") !== -1
+                        (pathname?.includes("/admin/settings")
                           ? "opacity-75"
                           : "text-blueGray-300")
                       }
@@ -143,7 +143,7 @@ export default function Sidebar() {
                     href="#pablo"
                     className={
                       "text-xs uppercase py-3 font-bold block " +
-                      (pathname?.includes("/admin/tables") !== -1
+                      (pathname?.includes("/admin/tables")
                         ? "text-lightBlue-500 hover:text-lightBlue-600"
                         : "text-blueGray-700 hover:text-blueGray-500")
                     }
@@ -151,7 +151,7 @@ export default function Sidebar() {
                     <i
                       className={
                         "fas fa-table mr-2 text-sm " +
-                        (pathname?.includes("/admin/tables") !== -1
+                        (pathname?.includes("/admin/tables")
                           ? "opacity-75"
                           : "text-blueGray-300")
                       }
@@ -167,7 +167,7 @@ export default function Sidebar() {
                     href="#pablo"
                     className={
                       "text-xs uppercase py-3 font-bold block " +
-                      (pathname?.includes("/admin/maps") !== -1
+                      (pathname?.includes("/admin/maps")
                         ? "text-lightBlue-500 hover:text-lightBlue-600"
                         : "text-blueGray-700 hover:text-blueGray-500")
                     }
@@ -175,7 +175,7 @@ export default function Sidebar() {
                     <i
                       className={
                         "fas fa-map-marked mr-2 text-sm " +
-                        (pathname?.includes("/admin/maps") !== -1
+                        (pathname?.includes("/admin/maps")
                           ? "opacity-75"
                           : "text-blueGray-300")
                       }

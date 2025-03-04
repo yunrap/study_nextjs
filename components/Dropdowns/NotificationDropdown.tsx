@@ -1,16 +1,21 @@
 "use client";
 import React from "react";
 import { createPopper } from "@popperjs/core";
+import Link from "next/link";
 
 const NotificationDropdown = () => {
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
-  const btnDropdownRef = React.createRef();
-  const popoverDropdownRef = React.createRef();
+  const btnDropdownRef = React.createRef<HTMLAnchorElement>();
+  const popoverDropdownRef = React.createRef<HTMLDivElement>();
   const openDropdownPopover = () => {
-    createPopper(btnDropdownRef.current, popoverDropdownRef.current, {
-      placement: "bottom-start",
-    });
+    createPopper(
+      btnDropdownRef.current as HTMLElement,
+      popoverDropdownRef.current as HTMLElement,
+      {
+        placement: "bottom-start",
+      }
+    );
     setDropdownPopoverShow(true);
   };
   const closeDropdownPopover = () => {
@@ -18,7 +23,7 @@ const NotificationDropdown = () => {
   };
   return (
     <>
-      <a
+      <Link
         className="text-blueGray-500 block py-1 px-3"
         href="#pablo"
         ref={btnDropdownRef}
@@ -28,7 +33,7 @@ const NotificationDropdown = () => {
         }}
       >
         <i className="fas fa-bell"></i>
-      </a>
+      </Link>
       <div
         ref={popoverDropdownRef}
         className={
